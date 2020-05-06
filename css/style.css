@@ -19,8 +19,7 @@ p {
   font-weight: 400;
 }
 
-.logo {
-  width: 30%;
+.do svg {
   margin-top: 1em;
 }
 
@@ -63,10 +62,6 @@ section {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   margin-left: 0;
-}
-
-.pic1 {
-  width: 100%;
 }
 
 .box1 {
@@ -132,7 +127,7 @@ main {
 .box3,
 .box4 {
   width: 100%;
-  padding: 2em 3em;
+  padding: 2em 1em;
   padding-bottom: 4em;
 }
 
@@ -266,7 +261,7 @@ blockquote {
   padding-right: 1em;
 }
 
-svg {
+.para svg {
   fill: currentColor;
   margin: 0.5em;
 }
