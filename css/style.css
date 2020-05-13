@@ -2,84 +2,56 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 2em 0em;
-}
 .wrap {
-  display: flex;
-}
-
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-
-.do svg {
-  margin-top: 1em;
-}
-
-.do {
-  margin-left: 2em;
-  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .re {
-  width: 50%;
+  text-align: end;
 }
 
-nav {
-  padding-top: 1em;
-  padding-left: 16.5em;
+.re ul {
+  list-style: none;
 }
 
 .re li {
-  list-style: none;
   display: inline;
-  margin-left: 2.5em;
 }
 
 .re a {
-  font-size: 1.5em;
-}
-
-.re li a {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-}
-
-.re a:hover {
   text-decoration: none;
-  color: blueviolet;
+  color: black;
+  font-size: 1.5em;
+  margin-left: 2em;
 }
 
 section {
   margin-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin-left: 0;
 }
 
 .box1 {
-  padding: 2em 3em;
+  margin-top: 1em;
   width: 100%;
 }
 
 .box1 h1 {
-  font-size: 2.4em;
+  font-size: 3em;
 }
 
 .box1 p {
-  font-size: 18px;
   width: 95%;
+  font-size: 1.4em;
 }
 
 .box2 {
@@ -94,6 +66,7 @@ section {
 
 .wrapper {
   display: flex;
+  width: 85%;
 }
 
 .mails {
@@ -106,83 +79,77 @@ section {
 
 #e-mail {
   width: 100%;
-  padding: 0.5em 0.8em;
+  padding: 1em 1em;
   border-style: none;
-  margin-top: 1em;
   border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1em;
 }
 
 .get {
-  width: 80%;
-  margin-top: 1em;
-  padding: 0.6em;
-  margin-left: 0.6em;
+  width: 100%;
+  padding: 1.1em;
+  margin-left: 1em;
   background-color: hsl(224, 93%, 58%);
   border-style: none;
   color: white;
-}
-
-.pic2 {
-  width: 100%;
-  padding-top: 2.5em;
+  border-radius: 3px;
+  font-size: 1em;
 }
 
 main {
-  margin-top: 5em;
   background: #f9f8fe;
+  margin-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
 }
 
-.box3,
-.box4 {
+.box3 {
   width: 100%;
-  padding: 2em 1em;
-  padding-bottom: 4em;
-}
-
-.box4 {
-  grid-column: 2/3;
-  grid-row: 1/3;
 }
 
 .box3 p {
-  width: 90%;
-  padding: 0;
-  font-size: 15px;
+  width: 79%;
+  font-size: 1.17em;
   margin-top: 1em;
 }
 
 .box3 h1 {
-  font-size: 2em;
+  font-size: 2.8em;
 }
 
-.row a {
+.ace a {
   color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
-main a:hover {
+.ace a:hover {
   text-decoration: none;
   color: hsl(170, 45%, 43%);
 }
 
 .dash {
   border: 0.5px solid hsl(170, 45%, 43%);
-  width: 10em;
+  width: 11em;
 }
 
 blockquote {
+  margin: 0;
   margin-top: 2em;
   background-color: white;
   padding: 2em;
-  width: 70%;
+  width: 60%;
   border-radius: 1%;
   padding-bottom: 5em;
   box-shadow: 1px 1px 3px gray;
 }
 
 .quote p {
-  font-size: 15px;
+  font-size: 1.1em;
   padding: 0;
-  width: 93%;
+  width: 99%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -194,53 +161,76 @@ blockquote {
 
 .face {
   border-radius: 50%;
-  width: 13%;
+  width: 12%;
 }
 
 .kb {
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.3;
-  margin-top: 0.1em;
+  margin-top: 0.4em;
   margin-left: 1em;
 }
 
+.box4 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin-top: 2em;
+}
+
+.pic2 {
+  width: 100%;
+}
+
 .wasp {
+  background-color: hsl(238, 22%, 44%);
+  padding-left: 3em;
+  padding-right: 3em;
   display: flex;
+  width: 100%;
 }
 
 .box5 {
-  background-color: hsl(238, 22%, 44%);
   color: white;
-  padding: 5em 3em;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.box5 h1 {
+  font-size: 2.5em;
 }
 
 .box5 p {
   margin-top: 1em;
-  font-size: 18px;
-  width: 90%;
+  font-size: 20px;
+  width: 84%;
 }
 
 .box6 {
-  background-color: hsl(238, 22%, 44%);
-  padding-left: 7em;
-  padding: 5em 3em;
+  padding-left: 9em;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  width: 100%;
 }
 
-#email {
+.email {
   width: 85%;
-  padding: 0.5em 0.8em;
+  padding: 0.8em 0.8em;
   border-style: none;
-  margin-top: 1em;
-  border-radius: 2px;
+  border-radius: 3px;
+  font-size: 1em;
 }
 
 .button {
-  width: 40%;
-  padding: 0.5em;
+  width: 50%;
+  padding: 0.8em;
   margin-top: 0.9em;
   background-color: hsl(224, 93%, 58%);
   border-style: none;
   color: white;
+  border-radius: 3px;
+  font-size: 1em;
 }
 
 .para {
@@ -249,16 +239,18 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5em 3em;
-  gap: 4em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
 .two a {
-  color: white;
+  color: hsl(240, 75%, 98%);
+  text-decoration: none;
 }
+
 .three a {
-  color: white;
+  color: hsl(240, 75%, 98%);
+  text-decoration: none;
 }
 
 .two,
@@ -272,6 +264,7 @@ blockquote {
   padding-top: 1em;
   margin-left: 0.6em;
   padding-right: 1em;
+  color: hsl(240, 75%, 98%);
 }
 
 .fb,
@@ -290,209 +283,192 @@ blockquote {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   /*Extra small devices(phones, 600px and down*/
-
   body {
-    width: 700px;
-    min-width: 375px;
+    width: 975px;
   }
 
-  .logo {
-    width: 100%;
+  .wrap {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
-  nav {
-    padding-left: 1.5em;
+  .re a {
+    font-size: 1.3em;
+    margin-left: 1em;
   }
 
-  .re li {
-    margin-left: 2.5em;
+  section {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   .row {
     display: inline;
   }
 
-  .box1 h1 {
-    font-size: 4em;
-    margin-top: 1em;
-    width: 100%;
+  .box1 {
     text-align: center;
+  }
+
+  .box1 h1 {
+    font-size: 4.5em;
   }
 
   .box1 p {
+    width: 90%;
     font-size: 2.8em;
-    width: 100%;
-    margin-left: 0em;
-    margin-top: 1.5em;
     text-align: center;
-  }
-
-  .pic1 {
-    width: 100%;
+    margin: 0 auto;
   }
 
   .wrapper {
-    display: inline;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
   }
 
   .mails {
-    margin-left: 2.5em;
+    width: 94%;
+  }
+
+  .but {
+    width: 94%;
+    margin: 1em 0;
   }
 
   #e-mail {
-    width: 150%;
-    padding: 1em 2em;
-    margin-top: 1.3em;
-    border-radius: 3px;
-    font-size: 25px;
+    font-size: 1.3em;
   }
 
   .get {
-    width: 256%;
-    margin-top: 1em;
-    padding: 1em;
-    margin-left: 1.8em;
-    font-size: 25px;
-    border-radius: 3px;
+    margin-left: 0em;
+    font-size: 1.3em;
+  }
+
+  main {
+    margin-top: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 4em;
   }
 
   .box3 h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     text-align: center;
   }
 
   .box3 p {
-    width: 90%;
-    margin-top: 1.3em;
-    text-align: left;
-    font-size: 2.4em;
-
-    margin-left: 1.2em;
-  }
-
-  .box3 a {
-    font-size: 1.5em;
+    width: 95%;
+    font-size: 2.8em;
   }
 
   .ace {
-    margin-top: 3em;
-    margin-bottom: 4em;
     text-align: center;
+    margin-top: 2em;
+  }
+
+  .ace a {
+    text-align: center;
+    font-size: 2em;
   }
 
   .dash {
-    margin-left: 21.7em;
-    width: 14.5em;
-    border: 1px solid hsl(170, 45%, 43%);
+    margin-left: 19em;
+    width: 18em;
   }
 
   blockquote {
-    width: 65%;
-    padding-top: 2em;
-    padding-bottom: 6em;
-    padding-left: 2em;
-    padding-right: 1em;
-    margin-left: 10em;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 2em;
   }
 
   .quote p {
-    font-size: 23.5px;
-    margin-left: 0.8em;
-  }
-
-  .quote svg {
-    margin-left: 1em;
+    margin-top: 0.4em;
+    width: 100%;
+    font-size: 1.9em;
   }
 
   .face {
-    margin-left: 1em;
+    width: 10%;
   }
+
   .kb {
-    font-size: 17px;
-    line-height: 1.3;
-    margin-top: 1em;
-    margin-left: 1em;
+    font-size: 1.3em;
+    margin-top: 0.4em;
   }
 
   .wasp {
-    display: inline-grid;
-  }
-
-  .box5,
-  .box6 {
-    width: 100%;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
   }
 
   .box5 {
-    text-align: center;
-    padding-bottom: 0em;
+    padding-bottom: 1em;
   }
 
   .box5 h1 {
+    text-align: center;
     font-size: 3.5em;
   }
 
   .box5 p {
-    width: 90%;
-    margin-left: 1em;
-    font-size: 2.5em;
+    margin: 0 auto;
+    font-size: 2.8em;
+    text-align: center;
   }
 
   .box6 {
-    padding: 0 3em;
-    padding-bottom: 7em;
+    padding: 1em 1em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 
-  #email {
-    width: 70%;
-    padding: 0.9em 1em;
-    margin-top: 1em;
-    margin-left: 5.5em;
-    border-radius: 3px;
-    font-size: 22px;
+  .email {
+    width: 60%;
+    padding: 1em;
   }
 
   .button {
-    width: 70%;
-    padding: 0.9em 0;
-    margin-top: 0.6em;
-    font-size: 22px;
-    margin-left: 5.5em;
-    border-radius: 3px;
+    width: 60%;
+    padding: 1em;
   }
 
   .para {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
-  .para p {
-    font-size: 2.5em;
+  .one p {
+    font-size: 1.6em;
+  }
+
+  .two,
+  .three,
+  .four {
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+
+  .two,
+  .three {
+    font-size: 1.6em;
   }
 
   .four {
-    margin-left: 20em;
+    text-align: center;
   }
-}
-
-@media only screen and (max-width: 1024px) {
-  /*Small devices(portrait tablets and large phones, 600px and up */
-  body {
-    width: 960px;
-    min-width: 769px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  /*Medium devices(landscape tablets, 768px and up*/
 }
 
 @media only screen and (min-width: 992px) {
   /*Large devices(laptops/desktops, 992px and up*/
-}
-
-@media only screen and (min-width: 1200px) {
-  /*Extra large devices(large laptops & desktops, 1200px and up*/
+  body {
+    width: 100%;
+  }
 }
